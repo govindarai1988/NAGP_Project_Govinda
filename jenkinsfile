@@ -25,7 +25,7 @@ pipeline{
           -D sonar.login=admin \
           -D sonar.password=Test@1234 \
           -D sonar.projectKey=sonarqubetest \
-          -D sonar.host.url=http://localhost:9000/"
+          -D sonar.host.url=http://localhost:9000
         }
     }
 }
