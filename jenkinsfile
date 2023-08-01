@@ -19,9 +19,9 @@ pipeline{
           bat "mvn test"
         }
       }
-        stage('SonarQube analysis') {
+        stage("SonarQube analysis") {
           def scannerHome = tool 'sonar_local';
-          withSonarQubeEnv('sonar_local') {
+          withSonarQubeEnv("sonar_local") {
           sh "${scannerHome}/bin/sonar-scanner \
           -D sonar.login=admin \
           -D sonar.password=Test@1234 \
