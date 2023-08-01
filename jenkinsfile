@@ -22,7 +22,7 @@ pipeline{
         stage("SonarQube analysis") {
           steps{
           withSonarQubeEnv("sonar_local") {
-           sonar-scanner.bat -D"sonar.projectKey=sonarqubetest" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.token=sqp_ce896adba5d8f772a25e9e5da4327ecf0c3d5a61"
+           "sonar-scanner.bat -D"sonar.projectKey=sonarqubetest" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.token=sqp_ce896adba5d8f772a25e9e5da4327ecf0c3d5a61"
         }
     }
 }
