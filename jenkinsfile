@@ -21,9 +21,7 @@ pipeline{
       }
         stage("SonarQube analysis") {
           steps{
-          def scannerHome = tool 'sonar_local';
           withSonarQubeEnv("sonar_local") {
-          sh "${scannerHome}/bin/sonar-scanner \
           -D sonar.login=admin \
           -D sonar.password=Test@1234 \
           -D sonar.projectKey=sonarqubetest \
