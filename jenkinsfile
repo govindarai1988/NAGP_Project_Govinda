@@ -9,6 +9,16 @@ pipeline{
       bat "echo hello"
       }
     }
+    stage("code build"){
+        steps{
+          bat "mvn clean"
+        }
+      }  
+       stage("code test"){
+          steps{
+          bat "mvn test"
+        }
+      }
       stage("Publish to Artifactory"){
         steps{
               rtMavenDeployer(
@@ -19,7 +29,7 @@ pipeline{
                 )
               rtMavenRun(
                   pom: 'pom.xml',
-                  goals:'clean install',
+                  goals:'',
                   deployerId:'deployer'
               )
               rtPublishBuildInfo(
@@ -28,16 +38,7 @@ pipeline{
             }
               
       }
-      stage("code build"){
-        steps{
-          bat "mvn clean"
-        }
-      }  
-       stage("code test"){
-          steps{
-          bat "mvn test"
-        }
-      }
+      
       
 }
 
