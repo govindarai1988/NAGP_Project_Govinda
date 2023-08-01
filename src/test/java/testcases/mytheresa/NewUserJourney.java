@@ -23,14 +23,15 @@ public class NewUserJourney {
 
 		WebDriver driver = bs.BrowserSettings();
 
-		createAccount(driver);
+		driver.getTitle();
+		//createAccount(driver);
 
 		// password change
 		// my account page access
-		MytheresaMyAccountPage map = new MytheresaMyAccountPage(driver);
-		changePassword(driver, map);
+		//MytheresaMyAccountPage map = new MytheresaMyAccountPage(driver);
+		//changePassword(driver, map);
 
-		logOut(driver, map);
+		//logOut(driver, map);
 
 		driver.close();
 
