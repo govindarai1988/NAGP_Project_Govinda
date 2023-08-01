@@ -1,0 +1,51 @@
+pipeline{
+  agent any
+  triggers {
+  cron('0 06 * * *')
+  }
+  stages{
+    stage("code checkout"){
+      steps{
+      bat "echo hello"
+      }
+    }
+      stage("Publish to Artifactory"){
+        steps{
+              rtMavenDeployer(
+                  id: 'deployer',
+                  serverId:'nagp@govinda',
+                  releaseRepo:'govinda1988',
+                  snapshotRepo:'govinda1988',
+                )
+              rtMavenRun(
+                  pom: 'pom.xml',
+                  goals:'clean install',
+                  deployerId:'deployer'
+              )
+              rtPublishBuildInfo(
+                  serverId:'nagp@govinda',
+              )
+            }
+              
+      }
+      stage("code build"){
+        steps{
+          bat "mvn clean"
+        }
+      }  
+       stage("code test"){
+          steps{
+          bat "mvn test"
+        }
+      }
+      
+}
+
+}
+  post {
+    success{
+        bat "echo success"
+            }
+      }
+
+  
