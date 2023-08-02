@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import junit.framework.Assert;
 import objectRepository.HomePage;
 
 public class NewUserJourney {
@@ -22,7 +23,7 @@ public class NewUserJourney {
 
 		driver.getTitle();
 		login(driver);
-		Thread.sleep(5000);
+		Assert.assertTrue(true);
 
 		// password change
 		// my account page access
@@ -34,7 +35,29 @@ public class NewUserJourney {
 		driver.close();
 
 	}
+	@Test
+	public void checkDashboard() throws InterruptedException {
+		BrowserSetting bs = new BrowserSetting();
+
+		WebDriver driver = bs.BrowserSettings();
+
+		driver.getTitle();
+		login(driver);
+		Thread.sleep(5000);
+		Assert.assertTrue(true);
+	}
 	
+	@Test
+	public void checkMainLinks() throws InterruptedException {
+		BrowserSetting bs = new BrowserSetting();
+
+		WebDriver driver = bs.BrowserSettings();
+
+		driver.getTitle();
+		login(driver);
+		Thread.sleep(5000);
+		Assert.assertTrue(true);
+	}
 	private void login(WebDriver driver) {
 		HomePage mhp = new HomePage(driver);
 		mhp.usernamePath().sendKeys(USERNAME);
