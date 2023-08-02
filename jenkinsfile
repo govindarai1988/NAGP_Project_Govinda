@@ -22,7 +22,7 @@ pipeline{
         stage("SonarQube analysis") {
           steps{
           withSonarQubeEnv("sonar_local") {
-           bat "mvn sonar:sonar"
+           bat "mvn sonar:sonar -Pcoverage"
         }
     	}
 	}
