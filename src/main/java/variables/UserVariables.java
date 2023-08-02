@@ -1,4 +1,4 @@
-package variables.mytheresa;
+package variables;
 
 public final class UserVariables {
 	public static final String USER_FIRST_NAME = "First Name";

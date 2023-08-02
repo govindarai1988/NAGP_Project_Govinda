@@ -1,4 +1,6 @@
-package testcases.mytheresa;
+package testcases;
+
+import static variables.UserVariables.*;
 
 import org.openqa.selenium.WebDriver;
 
@@ -7,12 +9,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import objectRepository.mytheresa.MytheresaAccountInformationPage;
-import objectRepository.mytheresa.MytheresaCreateAccountPage;
-import objectRepository.mytheresa.MytheresaHomePage;
-import objectRepository.mytheresa.MytheresaMyAccountPage;
-
-import static variables.mytheresa.UserVariables.*;
+import objectRepository.MytheresaAccountInformationPage;
+import objectRepository.MytheresaCreateAccountPage;
+import objectRepository.MytheresaHomePage;
+import objectRepository.MytheresaMyAccountPage;
 
 public class NewUserJourney {
 

@@ -1,8 +1,8 @@
-objectRepository\mytheresa\MytheresaMyAccountPage.class
-objectRepository\mytheresa\MytheresaWishListPage.class
-objectRepository\mytheresa\MytheresaNewArraivalThisWeekPage.class
-variables\mytheresa\UserVariables.class
-variables\mytheresa\UrlVariables.class
-objectRepository\mytheresa\MytheresaCreateAccountPage.class
-objectRepository\mytheresa\MytheresaAccountInformationPage.class
-objectRepository\mytheresa\MytheresaHomePage.class
+objectRepository\MytheresaCreateAccountPage.class
+objectRepository\MytheresaWishListPage.class
+objectRepository\MytheresaMyAccountPage.class
+objectRepository\MytheresaHomePage.class
+objectRepository\MytheresaAccountInformationPage.class
+variables\UrlVariables.class
+variables\UserVariables.class
+objectRepository\MytheresaNewArraivalThisWeekPage.class

@@ -1,4 +1,6 @@
-package testcases.mytheresa;
+package testcases;
+
+import static variables.UserVariables.*;
 
 import org.openqa.selenium.WebDriver;
 
@@ -6,12 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import objectRepository.mytheresa.MytheresaHomePage;
-import objectRepository.mytheresa.MytheresaMyAccountPage;
-import objectRepository.mytheresa.MytheresaNewArraivalThisWeekPage;
-import objectRepository.mytheresa.MytheresaWishListPage;
-
-import static variables.mytheresa.UserVariables.*;
+import objectRepository.MytheresaHomePage;
+import objectRepository.MytheresaMyAccountPage;
+import objectRepository.MytheresaNewArraivalThisWeekPage;
+import objectRepository.MytheresaWishListPage;
 
 public class WishListCheckAdd {
 
