@@ -32,6 +32,7 @@ pipeline{
             	waitForQualityGate abortPipeline: true
        		 }
 		}
+		}
       stage("Publish to Artifactory"){
         steps{
               rtMavenDeployer(
