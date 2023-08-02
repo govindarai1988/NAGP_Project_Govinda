@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-02T08:19:52Z" name="Suite" finished-at="2023-08-02T08:20:07Z" duration-ms="14977">
+  <suite started-at="2023-08-02T08:52:38Z" name="Suite" finished-at="2023-08-02T08:52:51Z" duration-ms="12789">
     <groups>
     </groups>
-    <test started-at="2023-08-02T08:19:52Z" name="Test" finished-at="2023-08-02T08:20:07Z" duration-ms="14977">
+    <test started-at="2023-08-02T08:52:38Z" name="Test" finished-at="2023-08-02T08:52:51Z" duration-ms="12789">
       <class name="testcases.NewUserJourney">
-        <test-method signature="accountCreate()[pri:0, instance:testcases.NewUserJourney@40e6dfe1]" started-at="2023-08-02T08:19:52Z" name="accountCreate" finished-at="2023-08-02T08:20:07Z" duration-ms="14955" status="PASS">
+        <test-method signature="loginAccount()[pri:0, instance:testcases.NewUserJourney@55a1c291]" started-at="2023-08-02T08:52:38Z" name="loginAccount" finished-at="2023-08-02T08:52:51Z" duration-ms="12759" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accountCreate -->
+        </test-method> <!-- loginAccount -->
       </class> <!-- testcases.NewUserJourney -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

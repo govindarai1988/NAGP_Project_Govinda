@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MytheresaHomePage {
+public class HomePage {
 
 	WebDriver driver;
 
@@ -15,17 +15,17 @@ public class MytheresaHomePage {
 	@FindBy(xpath = "//*[@id=\"customer_flyout_login_info\"]/div/div/button")
 	WebElement create_account_button;
 	
-	@FindBy(id="email")
-	WebElement email;
+	@FindBy(name="username")
+	WebElement username;
 	
-	@FindBy(id="pass")
+	@FindBy(name="password")
 	WebElement password;
 	
-	@FindBy(id="send2")
+	@FindBy(xpath="//button[@type='submit']")
 	WebElement login_button;
 
 	// constructor method
-	public MytheresaHomePage(WebDriver driver) {
+	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -34,8 +34,8 @@ public class MytheresaHomePage {
 		return myaccount_link;
 	}
 
-	public WebElement emailTextPath() {
-		return email;
+	public WebElement usernamePath() {
+		return username;
 	}
 	
 	public WebElement passwordTextPath() {
