@@ -38,12 +38,12 @@ pipeline{
               rtMavenDeployer(
                   id: 'deployer',
                   serverId:'nagp@govinda',
-                  releaseRepo:'govinda1988',
-                  snapshotRepo:'govinda1988',
+                  releaseRepo:'NAGP2023_JFROG',
+                  snapshotRepo:'NAGP2023_JFROG',
                 )
               rtMavenRun(
                   pom: 'pom.xml',
-                  goals:'clean',
+                  goals:'clean install',
                   deployerId:'deployer'
               )
               rtPublishBuildInfo(
