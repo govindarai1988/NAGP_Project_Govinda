@@ -1,3 +1,5 @@
 testcases\WebdriverSettings.class
+testcases\DashboardValidationTests.class
+testcases\PIMValidationTests.class
 testcases\BrowserSetting.class
 testcases\NewUserJourney.class

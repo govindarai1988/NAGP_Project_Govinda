@@ -12,31 +12,23 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import objectRepository.HomePage;
 
-public class NewUserJourney {
+public class DashboardValidationTests {
 
+	
 	@Test
-	public void loginAccount() throws InterruptedException {
-
+	public void checkDashboard() throws InterruptedException {
 		BrowserSetting bs = new BrowserSetting();
 
 		WebDriver driver = bs.BrowserSettings();
 
 		driver.getTitle();
 		login(driver);
+		Thread.sleep(5000);
 		Assert.assertTrue(true);
-
-		// password change
-		// my account page access
-		//MytheresaMyAccountPage map = new MytheresaMyAccountPage(driver);
-		//changePassword(driver, map);
-
-		//logOut(driver, map);
-
 		driver.close();
-
 	}
-
 	
+
 	private void login(WebDriver driver) {
 		HomePage mhp = new HomePage(driver);
 		mhp.usernamePath().sendKeys(USERNAME);
