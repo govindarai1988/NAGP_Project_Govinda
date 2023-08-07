@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test thread-count="1" name="Test">
 		<classes>
-			<class name="testcases.NewUserJourney" />
+			<class name="testcases.NewUserJourneyTest" />
 			<class name="testcases.PIMValidationTests" />
 			<class name="testcases.DashboardValidationTests" />
 		</classes>
