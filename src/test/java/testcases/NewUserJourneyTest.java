@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import objectrepository.HomePage;
 
-public class NewUserJourney {
+public class NewUserJourneyTest {
 
 	@Test
 	public void loginAccount() throws InterruptedException {
