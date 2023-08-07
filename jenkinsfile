@@ -59,7 +59,7 @@ post {
     success{
         bat "echo success"
    jacoco(
-                 execPattern: '**/path_to_file/jacoco.exec',
+                 execPattern: '**/target/jacoco.exec',
     		classPattern: '**/coverage/**',
 		sourcePattern: '**/coverage/**',
     		inclusionPattern: '**/*.class'
