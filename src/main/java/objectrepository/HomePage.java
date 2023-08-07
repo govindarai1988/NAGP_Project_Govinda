@@ -1,4 +1,4 @@
-package objectRepository;
+package objectrepository;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,10 +10,10 @@ public class HomePage {
 	WebDriver driver;
 
 	@FindBy(id = "myaccount")
-	WebElement myaccount_link;
+	WebElement myaccountLink;
 
 	@FindBy(xpath = "//*[@id=\"customer_flyout_login_info\"]/div/div/button")
-	WebElement create_account_button;
+	WebElement createAccountButton;
 	
 	@FindBy(name="username")
 	WebElement username;
@@ -22,7 +22,7 @@ public class HomePage {
 	WebElement password;
 	
 	@FindBy(xpath="//button[@type='submit']")
-	WebElement login_button;
+	WebElement loginButton;
 
 	// constructor method
 	public HomePage(WebDriver driver) {
@@ -31,7 +31,7 @@ public class HomePage {
 	}
 
 	public WebElement myAccountLinkPath() {
-		return myaccount_link;
+		return myaccountLink;
 	}
 
 	public WebElement usernamePath() {
@@ -43,11 +43,11 @@ public class HomePage {
 	}
 	
 	public WebElement loginButtonPath() {
-		return login_button;
+		return loginButton;
 	}
 	
 	public WebElement createButtonClickPath() {
-		return create_account_button;
+		return createAccountButton;
 	}
 
 }

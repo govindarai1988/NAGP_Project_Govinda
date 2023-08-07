@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
-import objectRepository.HomePage;
+import objectrepository.HomePage;
 
 public class NewUserJourney {
 

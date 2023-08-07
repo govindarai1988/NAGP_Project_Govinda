@@ -1,6 +1,6 @@
 package testcases;
 
-import static variables.UrlVariables.*;
+import static variables.URL.*;
 
 import java.util.concurrent.TimeUnit;
 

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
-import objectRepository.HomePage;
+import objectrepository.HomePage;
 
 public class PIMValidationTests {
 
@@ -23,7 +23,7 @@ public class PIMValidationTests {
 
 		driver.getTitle();
 		login(driver);
-		Thread.sleep(5000);
+		
 		Assert.assertTrue(true);
 		driver.close();
 	}
