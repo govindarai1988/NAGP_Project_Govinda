@@ -60,8 +60,8 @@ post {
         bat "echo success"
    jacoco(
                 execPattern: '**/build/jacoco/*.exec',
-                classPattern: '**/build/classes/java/main'
-                sourcePattern: '**/src/main','**/build/classes/java/testcases'
+                classPattern: '**/build/classes/java'
+                sourcePattern: '**/src/main',
             )
             }
       }
